@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% include "model-header.html" %} <!-- o que está dentro do include é o que será importado-->
+   
+</head>
+<body>
+
+    {% block content %} {%endblock %}  <!-- o que está dentro do block content será substituído pelo #conteúdo específico de cada página que herdar este template -->
+
+  
+    {% include "model-footer.html" %} <!-- o que está dentro do include é o que será importado -->
+</body>
+</html>

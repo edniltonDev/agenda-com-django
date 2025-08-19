@@ -15,3 +15,6 @@ class Evento(models.Model):
 
     def __str__(self):
         return self.titulo # Retorna o título do evento quando o objeto é convertido para string 
+    
+    def get_data_evento(self):
+        return self.data_evento.strftime('%d/%m/%Y %H:%M hs')# Formata a data do evento para o formato dia/mês/ano posso colocar na frente %H:%M para imprimir também hora:minuto
