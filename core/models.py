@@ -18,3 +18,6 @@ class Evento(models.Model):
     
     def get_data_evento(self):
         return self.data_evento.strftime('%d/%m/%Y %H:%M hs')# Formata a data do evento para o formato dia/mês/ano posso colocar na frente %H:%M para imprimir também hora:minuto
+
+    def get_data_input_evento(self):
+        return self.data_evento.strftime('%Y-%m-%dT%H:%M')
